@@ -25,7 +25,7 @@ $(document).ready(function() {
     var studentName = prompt('Ange namn');
 
     // Validate if student name is provided
-    if (studentName !== '') {
+    if (studentName !== null && studentName !== '') {
       var listItem = `
         <div class="list-item">
           <div class="list-item-content">
