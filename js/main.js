@@ -112,6 +112,16 @@ $(document).ready(function() {
       $(".navbar-menu").toggleClass("is-active");
   });
 
+  // Help btn click
+  $('#helpButton').on('click', function() {
+    swal("Hjälp", "Den här webbappen hjälper dig att kolla närvaro på ett enkelt sätt.\n\nLägg till namn i listan genom att trycka Lägg till-knappen.\n\nTryck på Status-knappen för att ändra status.\n\nTryck på ett namn för att ta bort det ur listan.");
+  });
+
+  // About btn click
+  $('#aboutButton').on('click', function() {
+    swal("Håll koll v.0.0.2", "Utvecklad av Kim Andersson.\nkandersson135@gmail.com");
+  });
+
   // Initialize progress bar
   updateProgressBar();
 });

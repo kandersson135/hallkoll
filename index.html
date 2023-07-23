@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-		<meta name="theme-color" content="#0288d1">
+		<meta name="theme-color" content="#111111">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 		<meta name="mobile-web-app-capable" content="yes">
@@ -16,16 +16,16 @@
 		<link rel="stylesheet" href="css/bulma.min.css">
 		<link rel="stylesheet" href="css/bulma-list.css">
 		<style type="text/css">
-			.navbar {background-color: #03a9f5 !important;}
+			.navbar {background-color: #333333 !important;}
+			.section {margin-top: -30px;}
 		</style>
 	</head>
 	<body>
-
-		<nav class="navbar is-info is-fixed-top" role="navigation" aria-label="main navigation">
+		<nav class="navbar is-primary is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
 			<div class="container">
 				<div class="navbar-brand">
 					<span class="navbar-item">
-						<i class="fas fa-eye"></i>&nbsp; Håll koll
+						<img src="img/eye.png">&nbsp; Håll koll
 					</span>
 
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -37,8 +37,8 @@
 
 				<div class="navbar-menu">
 					<div class="navbar-end">
-						<a class="navbar-item">Hjälp</a>
-						<a class="navbar-item">Om webbappen</a>
+						<a class="navbar-item" id="helpButton">Hjälp</a>
+						<a class="navbar-item" id="aboutButton">Om webbappen</a>
 					</div>
 				</div>
 			</div><!-- end container -->
@@ -47,7 +47,9 @@
 		<div class="section">
 			<div class="container">
 
-        <div class="is-pulled-left"><span class="presentStudents">0</span>/<span class="totalStudents"></span></div>
+				<progress class="progress is-success is-small" value="0" max="100"></progress>
+
+        <div class="is-pulled-left">Status: <span class="presentStudents">0</span>/<span class="totalStudents"></span></div>
 
         <div class="buttons are-small has-addons is-right">
           <button class="button" id="addStudentButton">
@@ -64,17 +66,15 @@
           </button>
         </div>
 
-				<progress class="progress is-success is-small" value="0" max="100"></progress>
-
         <div class="list" id="studentList">
         </div>
-
 			</div><!-- end container -->
 		</div><!-- end section -->
 
 		<!-- js -->
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/fontawesome-all.js"></script>
+		<script src="js/sweetalert.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
