@@ -27,7 +27,7 @@
 }
 
 .list-item:not(.box) {
-    padding: 0.75em;
+    padding: 0.50em;
 }
 .list-item:not(:last-child):not(.box) {
     border-bottom: 1px solid #dbdbdb;

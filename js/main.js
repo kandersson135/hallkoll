@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  var onAudio = new Audio('audio/on.mp3');
+  var offAudio = new Audio('audio/off.mp3');
+  onAudio.volume = 0.3;
+  offAudio.volume = 0.3;
+
   // Check if there is any existing student list in local storage
   if (localStorage.getItem('students')) {
     $('#studentList').html(localStorage.getItem('students'));
@@ -58,6 +63,7 @@ $(document).ready(function() {
     var $title = $listItem.find('.list-item-title');
     var statusOptions = ['is-danger', 'is-success'];
     var currentStatus = $statusButton.hasClass('is-danger') ? 'is-danger' : 'is-success';
+    var currentAudio = $statusButton.hasClass('is-danger') ? onAudio.play() : offAudio.play();
     var currentIndex = statusOptions.indexOf(currentStatus);
     var newIndex = (currentIndex + 1) % statusOptions.length;
 
