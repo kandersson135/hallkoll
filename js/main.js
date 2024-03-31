@@ -63,7 +63,7 @@ $(document).ready(function() {
     var $title = $listItem.find('.list-item-title');
     var statusOptions = ['is-danger', 'is-success'];
     var currentStatus = $statusButton.hasClass('is-danger') ? 'is-danger' : 'is-success';
-    //var currentAudio = $statusButton.hasClass('is-danger') ? onAudio.play() : offAudio.play();
+    var currentAudio = $statusButton.hasClass('is-danger') ? onAudio.play() : offAudio.play();
     var currentIcon = $statusButton.hasClass('is-danger') ? $(this).html('<i class="fas fa-check"></i>') : $(this).html('<i class="fas fa-minus"></i>');
     var currentIndex = statusOptions.indexOf(currentStatus);
     var newIndex = (currentIndex + 1) % statusOptions.length;
