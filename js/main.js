@@ -63,7 +63,7 @@ $(document).ready(function() {
     var $title = $listItem.find('.list-item-title');
     var statusOptions = ['is-danger', 'is-success'];
     var currentStatus = $statusButton.hasClass('is-danger') ? 'is-danger' : 'is-success';
-    var currentAudio = $statusButton.hasClass('is-danger') ? onAudio.play() : offAudio.play();
+    //var currentAudio = $statusButton.hasClass('is-danger') ? onAudio.play() : offAudio.play();
     var currentIcon = $statusButton.hasClass('is-danger') ? $(this).html('<i class="fas fa-check"></i>') : $(this).html('<i class="fas fa-minus"></i>');
     var currentIndex = statusOptions.indexOf(currentStatus);
     var newIndex = (currentIndex + 1) % statusOptions.length;
@@ -126,7 +126,7 @@ $(document).ready(function() {
 
   // About btn click
   $('#aboutButton').on('click', function() {
-    swal("Håll koll v.0.0.2", "Utvecklad av Kim Andersson.\nkandersson135@gmail.com");
+    swal("Håll koll v.0.0.4", "Utvecklad av Kim Andersson.\nkandersson135@gmail.com");
   });
 
   // Initialize progress bar

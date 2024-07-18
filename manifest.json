@@ -1,0 +1,16 @@
+{
+  "name": "Håll koll",
+  "short_name": "Håll koll",
+  "description": "Enkelt in- och utcheckningssystem för personal i förskola, skola och fritidshem.",
+  "icons": [
+    {
+      "src": "img/webapp-icon.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "https://kandersson135.github.io/hallkoll/",
+  "display": "standalone",
+  "background_color": "#eeeeee",
+  "theme_color": "#eeeeee"
+}
