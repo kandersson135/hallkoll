@@ -121,12 +121,12 @@ $(document).ready(function() {
 
   // Help btn click
   $('#helpButton').on('click', function() {
-    swal("Hjälp", "Den här webbappen hjälper dig att kolla närvaro på ett enkelt sätt.\n\nLägg till namn i listan genom att trycka Lägg till-knappen.\n\nTryck på Status-knappen för att ändra status.\n\nTryck på ett namn för att ta bort det ur listan.");
+    swal("Hjälp", "En webbapp som hjälper skol- och fritidspersonal att enkelt kolla närvaro.\n\n- Lägg till namn i listan genom att trycka Lägg till-knappen.\n- Tryck på Status-knappen för att ändra status.\n- Tryck på ett namn för att ta bort det ur listan.");
   });
 
   // About btn click
   $('#aboutButton').on('click', function() {
-    swal("Håll koll v.0.0.4", "Utvecklad av Kim Andersson.\nkandersson135@gmail.com");
+    swal("Håll koll v.0.0.5", "Utvecklad av Kim Andersson\nkandersson135@gmail.com");
   });
 
   // Initialize progress bar
